@@ -7,7 +7,7 @@ const app = express()
 //middelware
 app.use(express.json())
 
-app.use('/', booksRoute);
+app.use('/books', booksRoute);
 
 
 mongoose.connect(process.env.MONGODB)
